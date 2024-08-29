@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Incredible Team</title>
+    <style>
+        /* styles.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.team-section {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: -14rem;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+}
+
+.team-member {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+}
+
+.role-title {
+    font-size: 1.8rem;
+    color: #3498db;
+    margin-bottom: 0.5rem;
+}
+
+.member-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.description {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.training-info {
+    margin-top: 2rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .role-title {
+        font-size: 1.6rem;
+    }
+
+    .member-name {
+        font-size: 1.4rem;
+    }
+
+    .description {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+
+
+
+body {
+            background-color: rgb(255, 255, 255);
+            color: black;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        .coverimage {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(50%);
+            z-index: -1;
+        }
+
+        nav {
+            background-color: transparent;
+            width: 80%;
+            margin: 0 auto;
+            padding: 2rem 0;
+            border-radius: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: -5rem;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            margin-left: 22rem;
+        }
+
+        nav ul li {
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            display: block;
+            color: whitesmoke;
+            text-align: center;
+            border-radius: 1rem;
+            padding: 10px 15px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: rgb(199, 148, 53);
+        }
+
+        .logoimg {
+            width: 5rem;
+            height: auto;
+            border-radius: 2rem;
+        }
+
+        .btn2{
+            float: right;
+            margin-right:25rem;
+        }
+
+        .header {
+            text-align: center;
+            color: whitesmoke;
+            font-size: 5rem;
+        }
+
+        .catchphrase {
+            text-align: center;
+            color: whitesmoke;
+            font-weight: 500;
+            margin-top: -2rem;
+            margin-bottom: 5rem;
+        }
+
+        .centerbtn {
+            display: flex;
+            justify-content: center;
+        }
+
+        .startbtn, button, .btn2 {
+            padding: 1rem;
+            border-radius: 1rem;
+            background-color: rgb(255, 254, 254);
+            color: rgb(75, 75, 189);
+            border: 1px solid rgb(75, 75, 189);
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        button:hover, .btn2:hover {
+            background-color: black;
+            color: whitesmoke;
+            transition: background-color 0.5s ease-in-out;
+        }
+
+        .alignboxes {
+            display: flex;
+            align-items: center;
+            margin-left: 18rem;
+            gap: 3rem;
+            margin-top: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .box1 {
+            width: 15rem;
+            height: 15rem;
+            background-color: transparent;
+            border-radius: .5rem;
+        }
+
+        .img1 {
+            width: 16rem;
+            height: auto;
+            border-radius: .5rem;
+        }
+
+        .subheader {
+            margin-left: 5.5rem;
+            font-size: 3.5rem;
+        }
+
+        .textparagraphs, .textparagraphs2 {
+            margin-left: 5.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .textparagraphs2 {
+            float: right;
+            margin-right: 18rem;
+            margin-bottom: -3rem;
+        }
+
+        .image1, .image2 {
+            width: 20rem;
+            height: auto;
+            border-radius: 1rem;
+        }
+
+        .image1 {
+            float: right;
+            margin-top: -17rem;
+            margin-right: 16rem;
+        }
+
+        .image2 {
+            margin-top: -17rem;
+            margin-left: 10rem;
+        }
+
+        .subtopic {
+            background-color: rgb(192, 192, 198);
+            height: 24rem;
+            width: 100%;
+            margin: 0 auto;
+            border-radius: .5rem;
+            margin-bottom: 5rem;
+            color: black;
+        }
+
+        .box22 {
+            width: 18rem;
+            height: 18rem;
+            background-color: transparent;
+            border-radius: 1rem;
+            margin-left: 8rem;
+            margin-bottom: -20rem;
+            padding-top: 1.5rem;
+        }
+
+        .imgbox {
+            width: 18rem;
+            height: auto;
+            border-radius: 1rem;
+            padding-top: 1rem;
+        }
+
+        .moveitems {
+            margin-left: 36rem;
+        }
+
+        footer {
+            display: flex;
+            height: 200px;
+            padding: 2.5rem;
+            background-color: rgb(192, 192, 198);
+            margin-top: auto;
+        }
+
+        .footer-menu2 {
+            list-style: none;
+            margin-left: 151px;
+        }
+
+        .footer-item {
+            margin-left: 1rem;
+        }
+
+        .footer-link, .footer-link2, .brandname {
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: black;
+            text-decoration: none;
+        }
+
+        .footer-link2 {
+            color: rgb(51, 50, 50);
+            font-weight: 1000;
+            font-size: 1.5rem;
+        }
+
+        .loading-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 251, 251, 0.8);
+            color: #fff;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            z-index: 1000;
+        }
+
+        /* Mobile Responsiveness */
+        @media screen and (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                margin-bottom: 0;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                margin: 0;
+            }
+
+            nav ul li {
+                margin: 5px 0;
+            }
+
+            .header {
+                font-size: 2.5rem;
+            }
+
+            .catchphrase {
+                font-size: 1rem;
+                margin-top: 1rem;
+                margin-bottom: 2rem;
+            }
+
+            .centerbtn {
+                margin-top: 1rem;
+            }
+
+            .alignboxes {
+                flex-direction: column;
+                margin-left: 0;
+                gap: 1rem;
+            }
+
+            .subheader, .textparagraphs, .textparagraphs2 {
+                margin-left: 1rem;
+                margin-right: 1rem;
+            }
+
+            .subheader {
+                margin-left: 1rem;
+                margin-right: 1rem;
+            }
+
+            .image1, .image2 {
+                width: 100%;
+                height: auto;
+                margin: 0;
+            }
+
+            .subtopic {
+                height: auto;
+                padding: 1rem;
+            }
+
+            .moveitems {
+                margin-left: 0;
+                margin-top: 1rem;
+            }
+
+            footer {
+                flex-direction: column;
+                align-items: center;
+                padding: 1rem;
+            }
+
+            .footer-menu2 {
+                margin-left: 0;
+            }
+
+            .footer-item {
+                margin: 5px 0;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .header {
+                font-size: 2rem;
+            }
+
+            .catchphrase {
+                font-size: 0.875rem;
+                margin-top: 0.5rem;
+                margin-bottom: 1rem;
+            }
+
+            .alignboxes {
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+            }
+
+            .box1 {
+                width: 12rem;
+                height: 12rem;
+            }
+
+            .img1 {
+                width: 100%;
+                height: auto;
+            }
+
+            .subheader {
+                font-size: 2rem;
+            }
+
+            .textparagraphs, .textparagraphs2 {
+                margin-left: 0.5rem;
+                margin-right: 0.5rem;
+            }
+
+            .moveall{
+                margin-top: -33rem;
+                margin-bottom: 6rem;
+            }
+
+            footer {
+                padding: 1rem;
+                height: auto;
+            }
+
+            .footer-link, .footer-link2, .brandname {
+                font-size: 16px;
+            }
+
+            button{
+                margin-bottom: 2rem;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+
+    
+<img src="image/mainimg.jpg" class="coverimage" alt="">
+<nav>
+    
+    <div class="logo"><img class="logoimg" src="/image/logo.jpg" alt=""></div>
+    <ul>
+
+       
+        <li><a href="/index.html">Home</a></li>
+    
+    <li><a href="/About-Us.html">About Us</a></li>
+    <li><a href="Profile.html">Profile</a></li>
+    <li><a href="/Contact.html">Contact</a></li>
+    </ul>
+    </nav>
+
+
+
+
+    <h1 class="header"><span2>Our</span2>  Team</h1>
+    <p class="catchphrase">SECURTIY AT ITS FINEST</p>
+    <p class="catchphrase">(scroll to read more)</p>
+
+    <div class="centerbtn">
+  <a href="/About-Us.html">  <div class="startbtn">Get started with us</div></a>
+</div>
+    <div class="alignboxes">
+        
+        <a href="/subtopic/Amanga.html" alt=""><div class="box1"><img class="img1" src="images/WhatsApp Image 2024-08-28 at 8.44.28 AM (3).jpeg" alt=""></div></a>
+
+        <a href="/subtopic/Bongisipho Resources (PTY) LTD.html"><div class="box1"><img class="img1" src="images/WhatsApp Image 2024-08-28 at 8.44.28 AM (3).jpeg" alt=""></div></a>
+
+        <a href="/subtopic/TINSITA RESOURCES.html"><div class="box1"><img class="img1" src="images/WhatsApp Image 2024-08-28 at 8.44.28 AM (3).jpeg" alt=""></div></a>
+
+        
+    </div>
+   
+    <div class="team-section">
+        <h1 class="section-title">Our Incredible Team</h1>
+        <div class="team-member">
+            <h2 class="role-title">C.E.O</h2>
+            <p class="member-name">N.G. Ngoepe</p>
+            <p class="description">
+                Nkgatela is a vision of Gift Ngoepe, a former security officer. He observed how many security entities rendered service remotely, leaving sites with novice officers, rendering unprofessional services—he decided to build a security company to offer professional service on 3 pillars; Duty as a service; Security never rests and Reputation.
+            </p>
+        </div>
+        <div class="team-member">
+            <h2 class="role-title">Marketing New Business Dev.</h2>
+            <p class="member-name">S. Malepa, K.S Matlala</p>
+        </div>
+        <div class="team-member">
+            <h2 class="role-title">Office Administrator</h2>
+            <p class="member-name">C.P Thamaga</p>
+        </div>
+        <div class="team-member">
+            <h2 class="role-title">Bookkeeper</h2>
+            <p class="member-name">J. M Mokgabudi</p>
+        </div>
+        <div class="team-member">
+            <h2 class="role-title">Supervisor</h2>
+            <p class="member-name">Various</p>
+        </div>
+        <div class="team-member">
+            <h2 class="role-title">Trainer</h2>
+            <p class="member-name">Various</p>
+        </div>
+        <div class="team-member">
+            <h2 class="role-title">Security Tech</h2>
+            <p class="member-name">Various</p>
+        </div>
+        <div class="team-member">
+            <h2 class="role-title">Security Guarding</h2>
+            <p class="member-name">Various</p>
+        </div>
+        <div class="team-member">
+            <h2 class="role-title">Training Services</h2>
+            <p class="member-name">Various</p>
+        </div>
+        <div class="team-member">
+            <h2 class="role-title">Backend - Security Guards Trainees</h2>
+            <p class="member-name">Various</p>
+        </div>
+        <div class="training-info">
+            <h2 class="section-title">Basic PC Training</h2>
+            <p class="description">
+                We offer basic PC training for security guards and trainees to enhance their skills and efficiency in their roles. This training includes essential computer skills necessary for managing security systems and administrative tasks.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

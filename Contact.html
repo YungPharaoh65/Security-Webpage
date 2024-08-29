@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/made.js">
+    <style>
+
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.header, .catchphrase {
+    text-align: center;
+    color: black;
+    margin-bottom: .4rem;
+}
+
+.catchphrase {
+     margin-bottom: -17rem;
+}
+
+.header {
+    font-size: 5rem;
+}
+
+.catchphrase {
+    font-weight: 500;
+    margin-top: -2rem;
+    margin-bottom: 5rem;
+}
+
+nav {
+    background-color: transparent;
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -5rem;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-left: 22rem;
+}
+
+nav ul li {
+    margin-right: 10px;
+}
+
+nav ul li a {
+    display: block;
+    text-align: center;
+    border-radius: 1rem;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: whitesmoke;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: rgb(199, 148, 53);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.content {
+    max-width: 42rem;
+    height: 18rem;
+    margin-top: -3rem;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2 {
+    color: rgb(57, 57, 136);
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.logo {
+    width: 5rem;
+    height: 5rem;
+    background-color: rgb(179, 71, 71);
+    margin-right: 15rem;
+    border-radius: 15rem;
+}
+
+.logoimg {
+    width: 5rem;
+    height: auto;
+    border-radius: 2rem;
+}
+
+.coverimage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+    z-index: -1;
+}
+
+.alignimgs {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 25rem;
+}
+
+.iconimg {
+    width: 1.5rem;
+    cursor: pointer;
+    height: auto;
+}
+
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 251, 251, 0.8);
+    color: #fff;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    z-index: 1000;
+}
+
+ 
+    </style>
+
+
+</head>
+<body>
+    <div class="loading-overlay" id="loadingOverlay">Loading...</div>
+
+    <img src="image/about-us.jpg" class="coverimage" alt="">
+    <nav>
+    
+    <div class="logo"><img class="logoimg" src="/image/logo.jpg" alt=""></div>
+    <ul>
+
+       
+        <li><a href="/index.html">Home</a></li>
+    
+    <li><a href="/About-Us.html">About Us</a></li>
+    <li><a href="Profile.html">Profile</a></li>
+    <li><a href="/Contact.html">Contact</a></li>
+    </ul>
+    </nav>
+
+
+
+    <h1 class="header">Contact<span2>Us</span2>  </h1>
+     
+  
+   <div class="content">
+    <div class="contact-info">
+        <h2>Get in Touch with <span2>Nkagatela</span2></h2>
+        <p><strong>Address:</strong> 1234 Fourways, Gauteng, South Africa</p>
+        <p><strong>Phone:</strong> 087 8222 907</p>
+        <p><strong>Email:</strong> info@tinsitaafricagroup.com</p>
+        <p><strong>Working Hours:</strong> Mon-Fri, 9:00 AM - 5:00 PM</p>
+    </div>
+
+    
+
+    <ul class="moveicons">
+        <p>socials: </p>
+        <div class="alignimgs">
+            <img src="/image/logos/facebook.png" class="iconimg" >
+            <img src="/image/logos/X__Twitter.jpg" class="iconimg" >
+            <img src="/image/logos/whatsapp.png" class="iconimg" >
+            <img src="/image/logos/imstagrmm.jpeg" class="iconimg" >
+          
+          </div>
+    </ul>
+
+    
+</div>
+
+<br><br><br><br>
+
+
+
+<div class="catchphrase">Nkagatela Enterpriese @ 2024</div>
+<br><br> 
+
+</body>
+</html>
