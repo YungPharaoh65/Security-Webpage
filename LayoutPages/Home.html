@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+
+        /* Header */
+        header {
+            background-color: #333;
+            padding: 1rem 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header .logo {
+            margin-left: 1rem;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li {
+            text-align: center;
+            margin-left: 2rem;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 1rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('/images/hero-image.jpg') no-repeat center center/cover;
+            color: white;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-top: 1rem;
+        }
+
+        .hero .cta-button {
+            margin-top: 2rem;
+            padding: 0.8rem 2rem;
+            background-color: #ff6600;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            text-decoration: none;
+        }
+
+        .hero .cta-button:hover {
+            background-color: #e55b00;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 4rem 1rem;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .services h2 {
+            color: #333;
+            margin-bottom: 2rem;
+        }
+
+        .services .service-item {
+            display: inline-block;
+            width: 30%;
+            padding: 1rem;
+            margin: 1rem;
+            background-color: #f9f9f9;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .services .service-item img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 1rem;
+        }
+
+        .services .service-item h3 {
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .services .service-item p {
+            color: #666;
+        }
+
+        /* Portfolio Section */
+        .portfolio {
+            padding: 4rem 1rem;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        .portfolio h2 {
+            color: #333;
+            margin-bottom: 2rem;
+        }
+
+        .portfolio .portfolio-item {
+            display: inline-block;
+            width: 30%;
+            padding: 1rem;
+            margin: 1rem;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .portfolio .portfolio-item img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+
+        .portfolio .portfolio-item h3 {
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .portfolio .portfolio-item p {
+            color: #666;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 4rem 1rem;
+            background-color: #333;
+            color: white;
+            text-align: center;
+        }
+
+        .contact h2 {
+            margin-bottom: 2rem;
+        }
+
+        .contact p {
+            margin: 1rem 0;
+        }
+
+        .contact form {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .contact form input, .contact form textarea {
+            width: 100%;
+            padding: 1rem;
+            margin: 0.5rem 0;
+            border: none;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .contact form button {
+            padding: 1rem 2rem;
+            background-color: #ff6600;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact form button:hover {
+            background-color: #e55b00;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            width: 97.65%;
+            position: relative;
+            bottom: 0;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            header nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            header nav ul li {
+                margin: 0.5rem 0;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .hero .cta-button {
+                padding: 0.7rem 1.5rem;
+                font-size: 0.9rem;
+            }
+
+            .services .service-item,
+            .portfolio .portfolio-item {
+                width: 100%;
+                margin: 1rem 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header nav ul li {
+                margin: 0.3rem 0;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 0.9rem;
+            }
+
+            .hero .cta-button {
+                padding: 0.5rem 1rem;
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="/Subheader/logos/logo2.jpg" alt="Logo" width="50" height="50">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/LayoutPages/Portfolio.html">Home</a></li>
+                <li><a href="/LayoutPages/About.html">About</a></li>
+                <li><a href="/LayoutPages/services.html">Portfolio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div>
+            <h1>Welcome to My Portfolio</h1>
+            <p>Explore my work and learn more about what I do.</p>
+            <a href="/LayoutPages/About.html" class="cta-button">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <h2>What I Offer</h2>
+        <div class="service-item">
+            <img src="/images/web-development-icon.png" alt="Web Development">
+            <h3>Web Development</h3>
+            <p>I create responsive and dynamic websites using the latest technologies.</p>
+        </div>
+        <div class="service-item">
+            <img src="/images/ui-ux-icon.png" alt="UI/UX Design">
+            <h3>UI/UX Design</h3>
+            <p>Designing user-friendly interfaces with a focus on user experience.</p>
+        </div>
+        <div class="service-item">
+            <img src="/images/seo-icon.png" alt="SEO Optimization">
+            <h3>SEO Optimization</h3>
+            <p>Optimizing websites to rank higher on search engines and drive traffic.</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio">
+        <h2>My Work</h2>
+        <div class="portfolio-item">
+            <img src="/images/portfolio1.jpg" alt="Project 1">
+            <h3>Project Title 1</h3>
+            <p>A brief description of the project and the technologies used.</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="/images/portfolio2.jpg" alt="Project 2">
+            <h3>Project Title 2</h3>
+            <p>A brief description of the project and the technologies used.</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="/images/portfolio3.jpg" alt="Project 3">
+            <h3>Project Title 3</h3>
+            <p>A brief description of the project and the technologies used.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <h2>Get in Touch</h2>
+        <p>If you have any questions or want to work together, feel free to reach out!</p>
+        <form action="/contact" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+    </footer>
+</body>
+</html>
