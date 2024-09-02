@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        /* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    padding: 1rem 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    margin-left: 1rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    text-align: center;
+    margin-left: 2rem;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 1rem;
+}
+
+/* About Section */
+.about {
+    padding: 3rem 1rem;
+    background-color: white;
+    text-align: center;
+}
+
+.about .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about h1 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.about p {
+    margin: 1rem 0;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    width: 97.65%;
+    position: relative;
+    bottom: 0;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .about {
+        padding: 2rem 1rem;
+    }
+
+    .about .container {
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header nav ul li {
+        margin: 0.3rem 0;
+    }
+
+    .about {
+        padding: 1.5rem 0.5rem;
+    }
+
+    .about h1 {
+        font-size: 1.5rem;
+    }
+
+    .about p {
+        font-size: 0.9rem;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="/Subheader/logos/logo2.jpg" alt="Logo" width="50" height="50">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/LayoutPages/Portfolio.html">Home</a></li>
+                <li><a href="/LayoutPages/About.html">About</a></li>
+                <li><a href="/LayoutPages/services.html">Portfolio</a></li>
+                </ul>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <h1>About Me</h1>
+            <p>Hello! I am [Your Name], a [Your Profession]. I specialize in [Your Specialization]. With [Number] years of experience, I have worked on various projects involving [Technologies/Skills].</p>
+            <p>My journey began with [Brief Background or Story]. Over the years, I have developed a passion for [Your Passion or Area of Interest], and I am always eager to take on new challenges and opportunities.</p>
+            <p>In my spare time, I enjoy [Your Hobbies or Interests]. I believe that continuous learning and personal growth are essential to staying ahead in the ever-evolving field of [Your Field].</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+    </footer>
+</body>
+</html>

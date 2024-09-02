@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+   <style>
+    /* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    padding: 1rem 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    margin-left: 1rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    text-align: center;
+    margin-left: 2rem;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 1rem;
+}
+
+/* Services Section */
+.services {
+    padding: 3rem 1rem;
+    background-color: white;
+    text-align: center;
+}
+
+.services .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.service-block {
+    background-color: #ddd;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    width: calc(50% - 1rem); /* Adjust for spacing */
+    position: relative;
+}
+
+.service-block h2 {
+    margin: 1rem 0;
+    color: #333;
+}
+
+.service-block p {
+    color: #666;
+}
+
+.service-image {
+    width: 20rem;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+/* Vertical alignment for the two blocks */
+.vertical {
+    flex: 1 1 100%; /* Full width on small screens */
+}
+
+.horizontal {
+    flex: 1;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    width: 97.65%;
+    position: relative;
+    bottom: 0;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .services .container {
+        flex-direction: column;
+    }
+
+    .service-block {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header nav ul li {
+        margin: 0.3rem 0;
+    }
+
+    .service-block {
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+   </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="/Subheader/logos/logo2.jpg" alt="Logo" width="50" height="50">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/LayoutPages/Portfolio.html">Home</a></li>
+                <li><a href="/LayoutPages/About.html">About</a></li>
+                <li><a href="/LayoutPages/services.html">Portfolio</a></li>
+                </ul>
+        </nav>
+    </header>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container">
+            <div class="service-block vertical">
+                <img src="/TINSITA IMAGES/ABC cover page.png" alt="Service 1 Image" class="service-image">
+                <h2>Service 1</h2>
+                <p>Details about Service 1.</p>
+            </div>
+            <div class="service-block vertical">
+                <img src="service2.jpg" alt="Service 2 Image" class="service-image">
+                <h2>Service 2</h2>
+                <p>Details about Service 2.</p>
+            </div>
+            <div class="service-block horizontal">
+                <img src="service3.jpg" alt="Service 3 Image" class="service-image">
+                <h2>Service 3</h2>
+                <p>Details about Service 3.</p>
+            </div>
+            <div class="service-block horizontal">
+                <img src="service4.jpg" alt="Service 4 Image" class="service-image">
+                <h2>Service 4</h2>
+                <p>Details about Service 4.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+    </footer>
+</body>
+</html>

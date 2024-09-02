@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+   /* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+/* Ensure all sections cover the full width */
+section {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    background-color: #806565;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    flex: 1;
+    text-align: center;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 1rem;
+}
+
+/* Hero Section */
+.hero {
+    height: 80vh;
+    background-color: #444;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem;
+
+    border-bottom-left-radius:20rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+.hero button {
+    margin-top: 1rem;
+    padding: 1rem 1rem;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    cursor: pointer;
+    max-width: 300px;
+    width: 100%;
+    border-radius: 2rem;
+}
+
+/* About Section */
+.about {
+    padding: 3rem 1rem;
+    background-color: white;
+    text-align: center;
+}
+
+.about h2 {
+    margin-bottom: 1rem;
+}
+
+.about p {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+/* Portfolio Section */
+.portfolio {
+    padding: 3rem 1rem;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.portfolio h2 {
+    margin-bottom: 2rem;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.portfolio-item {
+    background-color: #ddd;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 2rem;
+}
+
+/* Contact Section */
+.contact {
+    padding: 3rem 1rem;
+    background-color: white;
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 1rem;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact form label,
+.contact form input,
+.contact form textarea,
+.contact form button {
+    width: 100%;
+    max-width: 600px;
+    margin: 0.5rem 0;
+}
+
+.contact form input,
+.contact form textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+}
+
+.contact form button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    cursor: pointer;
+    max-width: 300px;
+}
+
+.content {
+    max-width: 42rem;
+    height: 18rem;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2 {
+    color: rgb(57, 57, 136);
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    width: 97.6%;
+    border-top-right-radius: 3rem;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .hero button {
+        padding: 0.4rem 0.8rem;
+    }
+
+    .about,
+    .portfolio,
+    .contact {
+        padding: 2rem 1rem;
+    }
+
+    .portfolio-grid {
+        gap: 0.5rem;
+    }
+
+    .portfolio-item {
+        padding: 0.8rem;
+    }
+
+    .contact form input,
+    .contact form textarea {
+        width: 90%;
+    }
+}
+
+/* Header */
+header {
+    background-color: #333;
+    padding: 1rem 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    margin-left: 5rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end; /* Aligns the navigation items to the right */
+    margin: 0;
+    padding: 0;
+    
+}
+
+header nav ul li {
+    text-align: center;
+    margin-left: 2rem; /* Adds space between the navigation items */
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 1rem;
+}
+
+.iconimg {
+    width: 2rem;
+    height: auto;
+    cursor: pointer;
+}
+ 
+
+
+    </style>
+</head>
+<body>
+   <!-- Header Section -->
+   <header>
+    <div class="logo">
+        <img src="/Subheader/logos/logo2.jpg" alt="Logo" width="50" height="50">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="/LayoutPages/Portfolio.html">Home</a></li>
+            <li><a href="/LayoutPages/About.html">About</a></li>
+            <li><a href="/LayoutPages/services.html">Portfolio</a></li>
+            </ul>
+    </nav>
+</header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Your Name</h1>
+        <p>Welcome to my portfolio</p>
+        <button>Explore My Work</button>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>Brief introduction about yourself.</p>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <h2>My Work</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">Project 1</div>
+            <div class="portfolio-item">Project 2</div>
+            <div class="portfolio-item">Project 3</div>
+            <div class="portfolio-item">Project 4</div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+       
+   <div class="content">
+    <div class="contact-info">
+        <h2>Get in Touch with <span2>Nkagatela</span2></h2>
+        <p><strong>Address:</strong> 1234 Fourways, Gauteng, South Africa</p>
+        <p><strong>Phone:</strong> 087 8222 907</p>
+        <p><strong>Email:</strong> info@tinsitaafricagroup.com</p>
+        <p><strong>Working Hours:</strong> Mon-Fri, 9:00 AM - 5:00 PM</p>
+    </div>
+
+    <ul class="moveicons">
+        <p>socialss: </p>
+        <div class="alignimgs">
+            <img src="/LayoutPages/logos/facebook.png" class="iconimg" >
+            <img src="/LayoutPages/logos/imstagrmm.jpeg" class="iconimg" >
+            <img src="/LayoutPages/logos/whatsapp.png" class="iconimg" >
+            <img src="/LayoutPages/logos/X__Twitter.jpg" class="iconimg" >
+          
+          </div>
+    </ul>
+
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
